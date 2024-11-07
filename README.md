@@ -53,4 +53,6 @@ Certifique-se de que o arquivo requirements.txt lista as bibliotecas Flask, SQLA
 1. Autenticação de usuários
 2. Suporte para atualizar e deletar pedidos
 3. Integração com um banco de dados relacional completo, como PostgreSQL ou MySQL
-# restaurante_manager
+
+## 🤝 Contribuindo
+Se deseja contribuir com este projeto, por favor, faça um fork do repositório e crie uma pull request com suas alterações.
