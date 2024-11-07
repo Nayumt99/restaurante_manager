@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fazer Pedido</h1>
+        <form action="/pedidos" method="POST">
+            <label for="cliente_nome">Nome do Cliente:</label>
+            <input type="text" id="cliente_nome" name="cliente_nome" required>
+
+            <label for="cliente_telefone">Telefone do Cliente:</label>
+            <input type="text" id="cliente_telefone" name="cliente_telefone" required>
+
+            <label for="cliente_endereco">Endereço do Cliente:</label>
+            <input type="text" id="cliente_endereco" name="cliente_endereco" required>
+
+            <label for="cliente_cpf">CPF do Cliente:</label>
+            <input type="text" id="cliente_cpf" name="cliente_cpf" required>
+
+            <label for="cliente_data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="cliente_data_nascimento" name="cliente_data_nascimento" required>
+
+            <label for="forma_entrega">Forma de Entrega:</label>
+            <select id="forma_entrega" name="forma_entrega" required>
+                <option value="Em Domicílio">Em Domicílio</option>
+                <option value="Retirada no Local">Retirada no Local</option>
+            </select>
+
+            <label for="forma_pagamento">Forma de Pagamento:</label>
+            <select id="forma_pagamento" name="forma_pagamento" required>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Cartão de Débito">Cartão de Débito</option>
+                <option value="Pix">Pix</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select>
+
+            <label for="tipo_pedido">Tipo de Pedido:</label>
+            <select id="tipo_pedido" name="tipo_pedido" required>
+                <option value="Marmita Completa">Marmita Completa</option>
+                <option value="Marmita com Refrigerante">Marmita com Refrigerante</option>
+                <option value="Marmita com Suco">Marmita com Suco</option>
+                <option value="Refrigerante">Refrigerante</option>
+                <option value="Suco">Suco</option>
+                <option value="Água com Gás">Água com Gás</option>
+                <option value="Água sem Gás">Água sem Gás</

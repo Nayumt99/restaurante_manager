@@ -1,0 +1,79 @@
+/* Estilo para o fundo da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagem de fundo */
+body {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Camada de clareamento */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Ajuste a opacidade para clarear mais */
+    z-index: 0;
+}
+
+/* Estilo da caixa de seleção */
+.container {
+    background-color: white; /* Contraste com o fundo */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima da camada de clareamento */
+}
+
+/* Estilo do título e dos rótulos */
+h1, label {
+    color: #333333; /* Tom mais escuro para contraste */
+    margin-bottom: 10px;
+}
+
+/* Estilo dos campos de entrada e botões */
+input[type="text"], 
+input[type="date"], 
+select, 
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botão com transição */
+button {
+    background-color: #ff6347;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
